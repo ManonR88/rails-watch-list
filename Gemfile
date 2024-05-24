@@ -69,3 +69,5 @@ group :development do
 end
 
 gem "dotenv-rails"
+
+gem "cloudinary"
