@@ -1,0 +1,7 @@
+<%= form_with model: @list do |t| %>
+  <%= t.label :comment %>
+  <%= t.text_field :comment %>
+  
+<% end %>
+
+<%= link_to "Back to list", lists_path%>
