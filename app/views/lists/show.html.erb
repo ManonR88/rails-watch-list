@@ -1,5 +1,5 @@
 <h1><%= @list.name %></h1>
-<div><%= link_to "Back to list", lists_path, class: "btn btn-primary" %></div>
+<div><%= link_to "Back to list", root_path, class: "btn btn-primary" %></div>
 <%= link_to "Add a new movie", new_list_bookmark_path(@list) %>
 <div class="container">
   <% @list.bookmarks.each do |bookmark| %>
@@ -10,7 +10,7 @@
           <p><%= bookmark.movie.overview %></p>
           <p><%= bookmark.movie.rating %></p>
           <p><%= bookmark.comment %></p>
-          <%= link_to "Delete this movie", bookmark_path, class: "btn btn-dark", %>
+          <%#= link_to "Delete this movie", bookmark_path, class: "btn btn-dark", %>
           <%# specidfier delete pour link_to %>
         </div>
     </div>
