@@ -1,7 +1,8 @@
-<%= form_with model: @list do |t| %>
-  <%= t.label :comment %>
-  <%= t.text_field :comment %>
-  
+<%= simple_form_for(@list) do |t| %>
+  <%= t.input :name %>
+
+  <%= t.submit%>
+
 <% end %>
 
 <%= link_to "Back to list", lists_path%>
